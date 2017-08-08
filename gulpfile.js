@@ -9,17 +9,17 @@ var tsProject = typescript.createProject('tsconfig.json');
 gulp.task('compile', function() {
 	return gulp.src('src/**/*.ts')
 		.pipe(sourcemaps.init())
+		//.pipe(typescript(tsProject))
 		.pipe(tsProject())
-		/*
-		.pipe(small('index.js', {
-			externalResolve: ['node_modules'],
+		.pipe(small('bloc-party.js', {
+			outputFileName: { standalone: "scripts.js" },
+			externalResolve: ['node_modules'], //bundle external modules
 			globalModules: {
 				"crypto": {
 					standalone: "undefined"
 				}
 			}
 		}))
-		*/
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('static/scripts'));
 });

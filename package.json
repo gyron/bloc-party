@@ -1,0 +1,17 @@
+{
+  "name": "bloc-party",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+	"gulp": "^3.9.1",
+	"gulp-sourcemaps": "^2.6.0",
+	"gulp-typescript": "^3.2.1",
+	"gulp-uglify": "^3.0.0",
+	"small": "^0.2.9",
+	"typescript": "^2.1.5"
+  }
+}
