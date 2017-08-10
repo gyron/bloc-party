@@ -1,9 +1,18 @@
 {
   "compilerOptions": {
+	"outDir": "dist/",
 	"target": "es5",
 	"module": "commonjs",
-	"experimentalDecorators": true,
 	"emitDecoratorMetadata": true,
-	"lib": ["es2015", "dom"]
-  }
+	"experimentalDecorators": true,
+	"sourceMap": true,
+	"noImplicitAny": false,
+	"preserveConstEnums": true,
+	"removeComments": false,
+	"lib": ["es2015", "dom"],
+	"allowJs": true
+  },
+  "exclude": [
+  	"node_modules"
+  ]
 }

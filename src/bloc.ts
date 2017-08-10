@@ -1,10 +1,6 @@
-export class Bloc {
+export default class Bloc {
 
-	constructor() {
-
-	}
-
-	test() {
-		console.log("yay")
+	constructor(el:HTMLElement) {
+		console.log( 'Created Bloc' );
 	}
 }

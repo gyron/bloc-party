@@ -1,3 +1,6 @@
-export class Config {
+export default class Config {
 
+	constructor() {
+		console.log('Config created')
+	}
 }
